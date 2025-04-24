@@ -40,9 +40,8 @@ public class Main {
 
         Main burger = new Main();
         Scanner scanner = new Scanner(System.in);
-        char userText = '1';
+        char userText = 'b';
         String printBuger;
-
         while (userText != '0') {
             System.out.println("\n[ SHAKESHACK MENU ]");
 
@@ -56,21 +55,28 @@ public class Main {
             System.out.println(printBuger);
             System.out.println("0. 종료       | 종료\n");
 
-            System.out.print("원하시는 번호를 입력해주십시오. (처음 입력한 숫자만 인식합니다.): ");
+            System.out.print("원하는 번호를 입력해주세요. (처음 입력한 숫자만 인식합니다.): ");
             userText = scanner.next().charAt(0);
 
-            switch (userText) {
-                case '1' -> System.out.println("\n선택한 제품: " + burger.shackBurger());
-                case '2' -> System.out.println("\n선택한 제품: " + burger.smokeShack());
-                case '3' -> System.out.println("\n선택한 제품: " + burger.cheeseburger());
-                case '4' -> System.out.println("\n선택한 제품: " + burger.hamburger());
-                case '0' -> {
-                    System.out.println("\n프로그램을 종료합니다. ");
-                    continue;
+
+            while (true) {
+                switch (userText) {
+                    case '1' -> System.out.println("\n선택한 제품: " + burger.shackBurger() + "\n");
+                    case '2' -> System.out.println("\n선택한 제품: " + burger.smokeShack() + "\n");
+                    case '3' -> System.out.println("\n선택한 제품: " + burger.cheeseburger() + "\n");
+                    case '4' -> System.out.println("\n선택한 제품: " + burger.hamburger() + "\n");
+                    case '0' -> System.out.println("\n프로그램을 종료합니다. ");
+                    default ->  {
+                        System.out.print("\n잘못된 입력입니다.\n");
+                        break;
+                    }
                 }
-                default -> {
-                    System.out.print("잘못된 입력입니다.");
-                    continue;
+                if (userText == '0') {
+                    break;
+                } else {
+                    System.out.print("계속 하시려면 아무거나 입력 해주세요. (종료는 '0'): ");
+                    userText = scanner.next().charAt(0);
+                    break;
                 }
             }
         }
