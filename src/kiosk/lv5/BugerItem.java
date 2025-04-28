@@ -2,10 +2,12 @@ package kiosk.lv5;
 
 public class BugerItem {
 
+    // 메뉴 이름, 가격, 설명을 필드값으로 선언
     private String menuName;
     private String price;
     private String menuAccount;
 
+    // 선언한 필드를 활용하여 각 메뉴에 맞는 이름, 가격, 설명을 설정해서 반환
     public String shackBurger() {
         menuName = "shackBurger  ";
         price = " | W 6.9 | ";

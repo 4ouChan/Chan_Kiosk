@@ -14,10 +14,6 @@ public class MenuItem {
         menuList.addDessertMenu();
     }
 
-    public void mainList () {
-
-    }
-
     public void bugerList () {
             System.out.println("\n[ BURGER MENU ]");
 
