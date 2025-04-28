@@ -1,7 +1,5 @@
 package kiosk.lv4;
 
-import kiosk.lv4.Kiosk;
-
 public class Main {
 
     // lv2에서 메인 클래스에서 실행하던 프로그램을 Kiosk 클래스를 생성하여 넘겨주고, 쓰레드로 메인에서 실행시키도록 변경
@@ -14,3 +12,4 @@ public class Main {
         kioskThread.start();
     }
 }
+// lv4 끝
