@@ -9,12 +9,13 @@ public class Kiosk implements Runnable {
         Scanner scanner = new Scanner(System.in);
 
         MenuItem menuItem = new MenuItem();
+        Menu myMenu = new Menu();
 
         menuItem.addMenu();
 
         while (true) {
 
-            menuItem.mainList();
+            myMenu.mainList();
 
             System.out.print("원하는 번호를 입력해주세요. (처음 입력한 숫자만 인식합니다.): ");
             char userText = scanner.next().charAt(0);

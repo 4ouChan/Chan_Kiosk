@@ -14,14 +14,6 @@ public class MenuItem {
         menuList.addDessertMenu();
     }
 
-    public void mainList() {
-        System.out.println("[ MENU LIST ]");
-        System.out.println("1. Burgers");
-        System.out.println("2. Drinks");
-        System.out.println("3. Desserts");
-        System.out.println("0. 종료   |   종료\n");
-    }
-
     public void bugerList () {
             System.out.println("\n[ BURGER MENU ]");
 
