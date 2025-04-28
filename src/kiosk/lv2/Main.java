@@ -9,7 +9,7 @@ public class Main {
     // 여기서부터 메인 메서드
     public static void main(String[] args) {
 
-        // 클래스 외부에 생성한 기능을 사용하기 위해 인스턴스화
+        // MenuItem 클래스에 생성한 기능을 사용하기 위해 인스턴스화
         MenuItem burger = new MenuItem();
 
         // 메뉴 정보를 가져오기 위해 리스트 생성
@@ -34,10 +34,9 @@ public class Main {
             System.out.println("\n[ SHAKESHACK MENU ]");
 
             // menuList에서 값을 순서대로 출력
-            System.out.println(menuList.get(0));
-            System.out.println(menuList.get(1));
-            System.out.println(menuList.get(2));
-            System.out.println(menuList.get(3));
+            for (int i = 0; i < menuList.size(); i++) {
+                System.out.println((i + 1) + ". " + menuList.get(i));
+            }
             System.out.println("0. 종료       | 종료\n");
 
             System.out.print("원하는 번호를 입력해주세요. (처음 입력한 숫자만 인식합니다.): ");
