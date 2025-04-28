@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
+// Runnable 인터페이스를 사용해 main클래스에서 Thread를 사용.
 public class Kiosk implements Runnable {
     @Override
     public void run() {

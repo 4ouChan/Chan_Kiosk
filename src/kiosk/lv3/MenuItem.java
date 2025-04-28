@@ -2,6 +2,7 @@ package kiosk.lv3;
 
 public class MenuItem {
 
+    // MenuItem의 속성으로 이름, 가격, 설명을 설정.
     private String burgerName;
     private String price;
     private String burgerAccount;
