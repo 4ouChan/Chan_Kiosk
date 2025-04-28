@@ -7,6 +7,7 @@ public class MenuItem {
     private String price;
     private String burgerAccount;
 
+    // 이름, 가격, 설명 문자열을 모두 합해서 반환
     public String shackBurger() {
         burgerName = "shackBurger  ";
         price = " | W 6.9 | ";
@@ -14,6 +15,7 @@ public class MenuItem {
         return burgerName + price + burgerAccount;
     }
 
+    // 이름, 가격, 설명 문자열을 모두 합해서 반환
     public String smokeShack() {
         burgerName = "SmokeShack   ";
         price = " | W 8.9 | ";
@@ -21,6 +23,7 @@ public class MenuItem {
         return burgerName + price + burgerAccount;
     }
 
+    // 이름, 가격, 설명 문자열을 모두 합해서 반환
     public String cheeseburger() {
         burgerName = "Cheeseburger ";
         price = " | W 6.9 | ";
@@ -28,6 +31,7 @@ public class MenuItem {
         return burgerName + price + burgerAccount;
     }
 
+    // 이름, 가격, 설명 문자열을 모두 합해서 반환
     public String hamburger() {
         burgerName = "Hamburger    ";
         price = " | W 5.4 | ";
@@ -35,3 +39,4 @@ public class MenuItem {
         return burgerName + price + burgerAccount;
     }
 }
+// lv3 끝

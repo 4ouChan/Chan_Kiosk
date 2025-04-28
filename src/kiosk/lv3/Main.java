@@ -12,3 +12,4 @@ public class Main {
         kioskThread.start();
     }
 }
+// lv3 끝
