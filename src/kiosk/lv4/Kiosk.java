@@ -12,14 +12,9 @@ public class Kiosk implements Runnable {
 
         menuItem.addMenu();
 
-
         while (true) {
 
-            System.out.println("[ MENU LIST ]");
-            System.out.println("1. Burgers");
-            System.out.println("2. Drinks");
-            System.out.println("3. Desserts");
-            System.out.println("0. 종료   |   종료\n");
+            menuItem.mainList();
 
             System.out.print("원하는 번호를 입력해주세요. (처음 입력한 숫자만 인식합니다.): ");
             char userText = scanner.next().charAt(0);
