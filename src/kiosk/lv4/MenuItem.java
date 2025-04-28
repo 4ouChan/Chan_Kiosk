@@ -1,96 +1,117 @@
 package kiosk.lv4;
 
+import java.util.Scanner;
+
 public class MenuItem {
 
-    private String menuName;
-    private String price;
-    private String menuAccount;
+    Scanner scanner = new Scanner(System.in);
+    Menu menuList = new Menu();
+    char userText;
 
-    public String shackBurger() {
-        menuName =  "shackBurger  ";
-        price =  " | W 6.9 | ";
-        menuAccount =  "토마토, 양상추, 쉑소스가 토핑된 치즈버거";
-        return menuName + price + menuAccount;
+    public void addMenu() {
+        menuList.addBurgerMenu();
+        menuList.addDrinkMenu();
+        menuList.addDessertMenu();
     }
 
-    public String smokeShack() {
-        menuName = "SmokeShack   ";
-        price = " | W 8.9 | ";
-        menuAccount = "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거";
-        return menuName + price + menuAccount;
+    public void bugerList () {
+            System.out.println("\n[ BURGER MENU ]");
+
+            for (int i = 0; i < menuList.burgerMenu.size(); i++) {
+                System.out.println((i + 1) + ". " + menuList.burgerMenu.get(i));
+            }
+            System.out.println("0. 뒤로가기   |   뒤로가기\n");
+
+            System.out.print("원하는 번호를 입력해주세요. (처음 입력한 숫자만 인식합니다.): ");
+            userText = scanner.next().charAt(0);
+
+            while (true) {
+                switch (userText) {
+                    case '1' -> System.out.println("\n선택한 제품: " + menuList.burgerMenu.get(0) + "\n");
+                    case '2' -> System.out.println("\n선택한 제품: " + menuList.burgerMenu.get(1) + "\n");
+                    case '3' -> System.out.println("\n선택한 제품: " + menuList.burgerMenu.get(2) + "\n");
+                    case '4' -> System.out.println("\n선택한 제품: " + menuList.burgerMenu.get(3) + "\n");
+                    case '0' -> System.out.println("\n메인 화면으로 돌아갑니다.");
+                    default -> System.out.print("\n잘못된 입력입니다.\n");
+                }
+                if (userText == '0') {
+                    break;
+                } else {
+                    System.out.print("계속 하시려면 아무거나 입력해주세요. 메인 화면으로 돌아갑니다.: ");
+                    userText = scanner.next().charAt(0);
+                    break;
+                }
+            }
+        }
+
+        public void drinkList () {
+            System.out.println("\n[ DRINK MENU ]");
+
+            for (int i = 0; i < menuList.drinkMenu.size(); i++) {
+                System.out.println((i + 1) + ". " + menuList.drinkMenu.get(i));
+            }
+            System.out.println("0. 뒤로가기   |   뒤로가기\n");
+
+            System.out.print("원하는 번호를 입력해주세요. (처음 입력한 숫자만 인식합니다.): ");
+            userText = scanner.next().charAt(0);
+
+            while (true) {
+                switch (userText) {
+                    case '1' -> System.out.println("\n선택한 제품: " + menuList.drinkMenu.get(0) + "\n");
+                    case '2' -> System.out.println("\n선택한 제품: " + menuList.drinkMenu.get(1) + "\n");
+                    case '3' -> System.out.println("\n선택한 제품: " + menuList.drinkMenu.get(2) + "\n");
+                    case '4' -> System.out.println("\n선택한 제품: " + menuList.drinkMenu.get(3) + "\n");
+                    case '0' -> System.out.println("\n메인 화면으로 돌아갑니다.");
+                    default -> System.out.print("\n잘못된 입력입니다.\n");
+                }
+                if (userText == '0') {
+                    break;
+                } else {
+                    System.out.print("계속 하시려면 아무거나 입력해주세요. 메인 화면으로 돌아갑니다.: ");
+                    userText = scanner.next().charAt(0);
+                    break;
+                }
+            }
+        }
+
+        public void dessertList () {
+            System.out.println("\n[ DESSERT MENU ]");
+
+            for (int i = 0; i < menuList.dessertMenu.size(); i++) {
+                System.out.println((i + 1) + ". " + menuList.dessertMenu.get(i));
+            }
+            System.out.println("0. 뒤로가기   |   뒤로가기\n");
+
+            System.out.print("원하는 번호를 입력해주세요. (처음 입력한 숫자만 인식합니다.): ");
+            userText = scanner.next().charAt(0);
+
+            while (true) {
+                switch (userText) {
+                    case '1' -> System.out.println("\n선택한 제품: " + menuList.dessertMenu.get(0) + "\n");
+                    case '2' -> System.out.println("\n선택한 제품: " + menuList.dessertMenu.get(1) + "\n");
+                    case '3' -> System.out.println("\n선택한 제품: " + menuList.dessertMenu.get(2) + "\n");
+                    case '4' -> System.out.println("\n선택한 제품: " + menuList.dessertMenu.get(3) + "\n");
+                    case '0' -> System.out.println("\n메인 화면으로 돌아갑니다.");
+                    default -> System.out.print("\n잘못된 입력입니다.\n");
+                }
+                if (userText == '0') {
+                    break;
+                } else {
+                    System.out.print("계속 하시려면 아무거나 입력해주세요. 메인 화면으로 돌아갑니다.: ");
+                    userText = scanner.next().charAt(0);
+                    break;
+                }
+            }
+        }
     }
 
-    public String cheeseburger() {
-        menuName = "Cheeseburger ";
-        price = " | W 6.9 | ";
-        menuAccount = "포테이토 번과 비프패티, 치즈가 토핑된 치즈버거";
-        return menuName + price + menuAccount;
-    }
-
-    public String hamburger() {
-        menuName = "Hamburger    ";
-        price = " | W 5.4 | ";
-        menuAccount = "비프패티를 기반으로 야채가 들어간 기본버거";
-        return menuName + price + menuAccount;
-    }
 
 
-    public String cokaCola() {
-        menuName = "CokaCola  ";
-        price = " | W 2.5 | ";
-        menuAccount = "탄산이 기가막힌 코카콜라";
-        return menuName + price + menuAccount;
-    }
-
-    public String sprite() {
-        menuName = "Sprite    ";
-        price = " | W 2.5 | ";
-        menuAccount = "청량감이 끝내주는 스프라이트";
-        return menuName + price + menuAccount;
-    }
-
-    public String fanta() {
-        menuName = "Fanta     ";
-        price = " | W 2.5 | ";
-        menuAccount = "환타 오렌지, 환타 파인에플";
-        return menuName + price + menuAccount;
-    }
-
-    public String pepsi() {
-        menuName = "PepsiZero ";
-        price = " | W 2.5 | ";
-        menuAccount = "제로슈거 팹시 제로";
-        return menuName + price + menuAccount;
-    }
 
 
-    public String frenchFries() {
-        menuName = "French Fries      ";
-        price = " | W 4.5 | ";
-        menuAccount = "갓 튀겨 나온 감자튀김";
-        return menuName + price + menuAccount;
-    }
-
-    public String onionRing() {
-        menuName = "Onion Ring        ";
-        price = " | W 3.5 | ";
-        menuAccount = "달짝지근한 어니언 링";
-        return menuName + price + menuAccount;
-    }
-
-    public String mozzarellaSticks() {
-        menuName = "Mozzarella Sticks ";
-        price = " | W 3.0 | ";
-        menuAccount = "치즈가 쭈욱 늘어나는 치즈스틱";
-        return menuName + price + menuAccount;
-    }
-
-    public String iceCreamCone() {
-        menuName = "Ice Cream Cone    ";
-        price = " | W 2.0 | ";
-        menuAccount = "향긋한 바닐라향의 아이스크림";
-        return menuName + price + menuAccount;
-    }
 
 
-}
+
+
+
+

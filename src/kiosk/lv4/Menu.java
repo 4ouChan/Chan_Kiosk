@@ -5,34 +5,33 @@ import java.util.List;
 
 public class Menu {
 
-    MenuItem menuItem = new MenuItem();
+    BugerItem bugerItem = new BugerItem();
+    DrinkItem drinkItem = new DrinkItem();
+    DessertItem dessertItem = new DessertItem();
 
     List<String> burgerMenu = new ArrayList<>();
     List<String> drinkMenu = new ArrayList<>();
     List<String> dessertMenu = new ArrayList<>();
 
     public List<String> addBurgerMenu() {
-        burgerMenu.add(menuItem.shackBurger());
-        burgerMenu.add(menuItem.smokeShack());
-        burgerMenu.add(menuItem.cheeseburger());
-        burgerMenu.add(menuItem.hamburger());
+        burgerMenu.add(bugerItem.shackBurger());
+        burgerMenu.add(bugerItem.smokeShack());
+        burgerMenu.add(bugerItem.cheeseburger());
+        burgerMenu.add(bugerItem.hamburger());
         return burgerMenu;
     }
 
-    public List<String> addDrinkMenu() {
-        drinkMenu.add(menuItem.cokaCola());
-        drinkMenu.add(menuItem.sprite());
-        drinkMenu.add(menuItem.fanta());
-        drinkMenu.add(menuItem.pepsi());
-        return drinkMenu;
+    public void addDrinkMenu() {
+        drinkMenu.add(drinkItem.cokaCola());
+        drinkMenu.add(drinkItem.sprite());
+        drinkMenu.add(drinkItem.fanta());
+        drinkMenu.add(drinkItem.pepsi());
     }
 
-    public List<String> addDessertMenu() {
-        dessertMenu.add(menuItem.frenchFries());
-        dessertMenu.add(menuItem.onionRing());
-        dessertMenu.add(menuItem.mozzarellaSticks());
-        dessertMenu.add(menuItem.iceCreamCone());
-        return dessertMenu;
+    public void addDessertMenu() {
+        dessertMenu.add(dessertItem.frenchFries());
+        dessertMenu.add(dessertItem.onionRing());
+        dessertMenu.add(dessertItem.mozzarellaSticks());
+        dessertMenu.add(dessertItem.iceCreamCone());
     }
-
 }
