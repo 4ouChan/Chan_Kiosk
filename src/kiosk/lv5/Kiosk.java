@@ -47,4 +47,4 @@ public class Kiosk implements Runnable {
         }
     }
 }
-
+// lv5 1차 수정

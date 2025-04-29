@@ -12,3 +12,4 @@ public class Main {
         kioskThread.start();
     }
 }
+// lv5 1차 수정
