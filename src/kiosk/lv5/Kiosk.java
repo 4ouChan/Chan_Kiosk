@@ -18,7 +18,6 @@ public class Kiosk implements Runnable {
         // 반복문을 활용해 사용자가 특정 값을 입력하기 전까지 반복
         while (true) {
 
-
             // 메인 카테고리를 출력 해주는 기능 사용
             menuItem.mainList();
 
@@ -39,9 +38,9 @@ public class Kiosk implements Runnable {
                 System.out.println("잘못된 입력입니다.");
                 continue;
             }
-
+            // 메뉴를 선택하고 선택한 메뉴를 출력하는 기능 호출
             menuItem.selectMenu(userText);
         }
     }
 }
-// lv5 구조 개선
+// lv5 끝.

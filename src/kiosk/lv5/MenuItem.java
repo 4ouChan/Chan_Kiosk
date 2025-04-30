@@ -7,7 +7,6 @@ public class MenuItem {
     private final Scanner scanner = new Scanner(System.in);
     private final Menu menuList = new Menu();
 
-
     public void addMenu() {
         menuList.addBurgerMenu();
         menuList.addDrinkMenu();
@@ -42,8 +41,6 @@ public class MenuItem {
         }
         System.out.println("0. 뒤로가기   |   뒤로가기\n");
     }
-
-
 
     public void selectMenu(char userText) {
         if (userText == '1') {
@@ -109,4 +106,4 @@ public class MenuItem {
         }
     }
 }
-// lv5 구조 개선
+// lv5 끝
