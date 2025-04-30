@@ -24,16 +24,18 @@ public class MenuItem {
     }
 
     public void printMenuList(char userText) {
-        System.out.println("\n[ BURGER MENU ]");
         if (userText == '1') {
+            System.out.println("\n[ BURGER MENU ]");
             for (int i = 0; i < menuList.getBurgerMenu().size(); i++) {
                 System.out.println((i + 1) + ". " + menuList.getBurgerMenu().get(i));
             }
         } else if (userText == '2') {
+            System.out.println("\n[ DRINK MENU ]");
             for (int i = 0; i < menuList.getDrinkMenu().size(); i++) {
                 System.out.println((i + 1) + ". " + menuList.getDrinkMenu().get(i));
             }
         } else if (userText == '3') {
+            System.out.println("\n[ DESSERT MENU ]");
             for (int i = 0; i < menuList.getDessertMenu().size(); i++) {
                 System.out.println((i + 1) + ". " + menuList.getDessertMenu().get(i));
             }
