@@ -32,19 +32,16 @@ public class Kiosk implements Runnable {
                 break;
             }
 
-            // userText의 값이 1이면, burgerList 호출
+            // userText의 값에 맞춰 메뉴 리스트 출력
             if (userText == '1') {
                 menuItem.bugerList();
-            }
-
-            // userText의 값이 2면, drinkList 호출
-            if (userText == '2') {
+            } else if (userText == '2') {
                 menuItem.drinkList();
-            }
-
-            // userText의 값이 3이면, dessertList 호출
-            if (userText == '3') {
+            } else if (userText == '3') {
                 menuItem.dessertList();
+            } else {
+                System.out.println("잘못된 입력입니다.");
+                continue;
             }
         }
     }
