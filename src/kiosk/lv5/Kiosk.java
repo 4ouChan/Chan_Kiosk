@@ -34,7 +34,7 @@ public class Kiosk implements Runnable {
 
             // userText의 값이 1, 2, 3이면, 알맞은 기능을 호출하고 그 외 경우엔 잘못된 입력이라는 메시지 출력
             if (userText == '1' || userText == '2' || userText == '3') {
-                menuItem.addTotalList(userText);
+                menuItem.printMenuList(userText);
             } else {
                 System.out.println("잘못된 입력입니다.");
                 continue;

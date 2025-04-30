@@ -23,7 +23,7 @@ public class MenuItem {
         System.out.println("0. 종료   |   종료\n");
     }
 
-    public void addTotalList(char userText) {
+    public void printMenuList(char userText) {
         System.out.println("\n[ BURGER MENU ]");
         if (userText == '1') {
             for (int i = 0; i < menuList.getBurgerMenu().size(); i++) {

@@ -14,16 +14,6 @@ public class Menu {
     private final List<String> dessertMenu = new ArrayList<>();
 
 
-    List<String> totalMenu = new ArrayList<>();
-
-    List<String> addtotalMenu(char userText) {
-        totalMenu.add(burgerMenu.toString());
-        totalMenu.add(drinkMenu.toString());
-        totalMenu.add(dessertMenu.toString());
-        return totalMenu;
-    }
-
-
 
     // burgerMenu컬렉션에 값을 할당하는 기능
     public void addBurgerMenu() {
