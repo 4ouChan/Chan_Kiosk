@@ -40,6 +40,13 @@ public class Kiosk implements Runnable {
             }
             // 메뉴를 선택하고 선택한 메뉴를 출력하는 기능 호출
             menuItem.selectMenu(userText);
+            if (userText == '0') {
+                System.out.println("\n메인 화면으로 돌아갑니다.\n");
+                break;
+            } else {
+                System.out.print("계속 하시려면 아무거나 입력해주세요. 메인 화면으로 돌아갑니다.: ");
+                userText = scanner.next().charAt(0);
+            }
         }
     }
 }

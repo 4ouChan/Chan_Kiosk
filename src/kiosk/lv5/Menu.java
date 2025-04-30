@@ -13,8 +13,6 @@ public class Menu {
     private final List<String> drinkMenu = new ArrayList<>();
     private final List<String> dessertMenu = new ArrayList<>();
 
-
-
     // burgerMenu컬렉션에 값을 할당하는 기능
     public void addBurgerMenu() {
         burgerMenu.add(createItem.burgerItem("shackBurger  ", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거"));
@@ -55,4 +53,4 @@ public class Menu {
     }
 
 }
-// lv5 끝
+// lv5 끝.
