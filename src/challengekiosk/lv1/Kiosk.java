@@ -77,4 +77,4 @@ public class Kiosk implements Runnable {
         }
     }
 }
-// 도전기능
+// 도전 장바구니

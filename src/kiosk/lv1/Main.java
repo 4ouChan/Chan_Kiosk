@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    // 클래스 외부에 메서드 생성
+    // 메인 메서드 외부에 필드 생성
     String burgerName;
     String price;
     String burgerAccount;

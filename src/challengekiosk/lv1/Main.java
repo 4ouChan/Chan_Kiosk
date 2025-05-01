@@ -12,4 +12,4 @@ public class Main {
         kioskThread.start();
     }
 }
-// 도전기능
+// 도전 장바구니
