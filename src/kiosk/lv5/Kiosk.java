@@ -50,4 +50,4 @@ public class Kiosk implements Runnable {
         }
     }
 }
-// lv5 끝.
+// lv5 끝
