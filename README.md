@@ -57,7 +57,7 @@
 
 각 클래스의 필드를 `private`으로 선언하고, 게터를 활용하여 접근하는 방식으로 사용했습니다.  <br> 
 여기까지 진행하고나서 코드 구조를 개선했습니다. 개선 내용은 블로그에 기재하였으므로, 블로그 링크를 남깁니다. <br> <br>
-[구조 개선 사항] : http://xn--velog-2y4x.io/@4ou_chan/%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EA%B5%AC%EC%A1%B0-%EA%B0%9C%EC%84%A0
+[구조 개선 사항] : https://velog.io/@4ou_chan/%ED%82%A4%EC%98%A4%EC%8A%A4%ED%81%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EA%B5%AC%EC%A1%B0-%EA%B0%9C%EC%84%A0
 
 
 ### 도전 기능 Lv.1 진행사항
