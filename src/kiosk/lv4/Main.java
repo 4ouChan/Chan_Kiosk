@@ -12,4 +12,4 @@ public class Main {
         kioskThread.start();
     }
 }
-// lv4 끝
+// lv4 끝.
