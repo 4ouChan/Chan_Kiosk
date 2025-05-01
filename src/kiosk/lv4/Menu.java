@@ -6,7 +6,7 @@ import java.util.List;
 public class Menu {
 
     // 각 카테고리별로 인스턴스화
-    BugerItem bugerItem = new BugerItem();
+    BurgerItem bugerItem = new BurgerItem();
     DrinkItem drinkItem = new DrinkItem();
     DessertItem dessertItem = new DessertItem();
 

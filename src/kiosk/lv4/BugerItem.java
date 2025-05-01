@@ -1,6 +1,6 @@
 package kiosk.lv4;
 
-public class BugerItem {
+public class BurgerItem {
 
     // 메뉴 이름, 가격, 설명을 필드값으로 선언
     private String menuName;
