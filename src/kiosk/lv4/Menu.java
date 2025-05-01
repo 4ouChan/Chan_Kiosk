@@ -6,7 +6,7 @@ import java.util.List;
 public class Menu {
 
     // 각 카테고리별로 인스턴스화
-    BurgerItem bugerItem = new BurgerItem();
+    BurgerItem burgerItem = new BurgerItem();
     DrinkItem drinkItem = new DrinkItem();
     DessertItem dessertItem = new DessertItem();
 
@@ -26,10 +26,10 @@ public class Menu {
 
     // burgerMenu컬렉션에 값을 할당하는 기능
     public List<String> addBurgerMenu() {
-        burgerMenu.add(bugerItem.shackBurger());
-        burgerMenu.add(bugerItem.smokeShack());
-        burgerMenu.add(bugerItem.cheeseburger());
-        burgerMenu.add(bugerItem.hamburger());
+        burgerMenu.add(burgerItem.shackBurger());
+        burgerMenu.add(burgerItem.smokeShack());
+        burgerMenu.add(burgerItem.cheeseburger());
+        burgerMenu.add(burgerItem.hamburger());
         return burgerMenu;
     }
 
